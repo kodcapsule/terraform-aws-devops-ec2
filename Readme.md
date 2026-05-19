@@ -9,9 +9,7 @@
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.0, < 6.0 |
 
-## Modules
 
-No modules.
 
 ## Resources
 
