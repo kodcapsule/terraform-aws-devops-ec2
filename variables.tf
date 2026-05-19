@@ -4,3 +4,9 @@ variable "instance_type" {
     default     = "t2.micro"
   
 }
+
+variable "environment" {
+  type = string
+  default = "dev"
+  description = "The environment for the instance"
+}

@@ -11,12 +11,12 @@ data "aws_ami" "amazon_linux_2023" {
 
 
 
-resource "aws_instance" "web" {
+resource "aws_instance" "web-server" {
   ami           = data.aws_ami.amazon_linux_2023.id
   instance_type = var.instance_type
 
   tags = {
-    Name = "Terraform-Lab-Instance"
+    Name = "Terraform-Lab-Instance-${var.environment}"
   }
 }
 
