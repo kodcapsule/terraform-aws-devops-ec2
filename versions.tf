@@ -1,14 +1,12 @@
 terraform {
-  # Minimum version of the Terraform CLI required
-  required_version = ">= 1.3.0"
+ 
+  required_version = ">= 1.1.3"
 
-  required_providers {
-    # Specify the AWS provider source and version
+  required_providers {    
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 4.0, < 6.0"
+      version = ">= 5.0.0, < 6.0"
     }
-
    
   }
 }
