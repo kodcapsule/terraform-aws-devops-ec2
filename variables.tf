@@ -10,3 +10,8 @@ variable "environment" {
   default = "dev"
   description = "The environment for the instance"
 }
+
+variable "ami_id" {
+  description = "Id for AMI"
+  type        = string
+}
